@@ -1,0 +1,36 @@
+{
+  "name": "crypto-gcm",
+  "version": "0.0.1",
+  "description": "encrypt and decrypt with AES GCM 256, different plaintext/payload encodings supported",
+  "keywords": [
+    "aes",
+    "gcm",
+    "256",
+    "crypto",
+    "cryptography",
+    "encryption",
+    "decryption",
+    "authenticated",
+    "security"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test.js",
+    "2npm": "publish"
+  },
+  "homepage": "https://github.com/rmi7/crypto-gcm",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rmi7/crypto-gcm.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rmi7/crypto-gcm/issues"
+  },
+  "author": "rmi7",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.0.2",
+    "publish": "^0.6.0"
+  }
+}
