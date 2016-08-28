@@ -12,9 +12,9 @@ Everything happens synchronously, so no callbacks/promises/async.
 
 To store the encryption key, a `WeakMap` is used.
 
-If you forget to call `kg.destroy()` and `kg` goes out of scope, `kg` will be
+If you forget to call `cg.destroy()` and `cg` goes out of scope, `cg` will be
 garbage collected. Since we are using a `WeakMap`, the dictionary entry of
-`kg` inside the `WeakMap` will be automatically set for garbage collection, and
+`cg` inside the `WeakMap` will be automatically set for garbage collection, and
 thus be deleted!
 
 **Preventing a memory leak of the private key if you forget to call `destroy()`.**
@@ -32,7 +32,7 @@ const CryptoGcm = require('crypto-gcm');
 const key = crypto.randomBytes(32);
 
 // create instance (you can create multiple instances)
-const kg = new CryptoGcm({
+const cg = new CryptoGcm({
     key,
     encoding : {
       plaintext : 'utf8', // also supported: ascii, buffer
@@ -44,16 +44,16 @@ const kg = new CryptoGcm({
 const plaintext = 'my plaintext';
 
 // will be base64 string
-const payload = kg.encrypt(plaintext);
+const payload = cg.encrypt(plaintext);
 
 // will be utf8 string
-const decrypted = kg.decrypt(encrypted);
+const decrypted = cg.decrypt(encrypted);
 
 // will be true
 decrypted === plaintext;
 
 // when you're done with this instance
-kg.destroy();
+cg.destroy();
 
 ```
 
