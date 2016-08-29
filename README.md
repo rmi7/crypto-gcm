@@ -15,7 +15,7 @@ To store the encryption key, a `WeakMap` is used.
 If you forget to call `cg.destroy()` and `cg` goes out of scope, the saved encryption key inside `cg` would still reference itself, and so will not be set for garbage collection, leading to a memory leak.
 
 Since we are using a `WeakMap`, each dictionary entry of
-`cg` inside the `WeakMap` does not hold a reference to itself, so in the above situation, there would be no more references to the kg instance, and so the entry would be set for garbage collection, preventing a memory leak of the private key if you forget to call `cg.destroy()`.
+`cg` inside the `WeakMap` does not hold a reference to itself, so in the above situation, there would be no more references to the `cg` instance, and so the entry would be set for garbage collection, and be removed, preventing a memory leak of the private key if you forget to call `cg.destroy()`.
 
 ## Usage
 
