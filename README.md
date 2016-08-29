@@ -44,8 +44,18 @@ const plaintext = 'my plaintext';
 // will be base64 string
 const payload = cg.encrypt(plaintext);
 
+// check if encryption failed
+if (!payload) {
+  // encryption failed, invalid plaintext (encoding)
+}
+
 // will be utf8 string
 const decrypted = cg.decrypt(encrypted);
+
+// check if decryption failed
+if (!decrypted) {
+  // decryption failed, invalid payload (encoding)
+}
 
 // will be true
 decrypted === plaintext;
