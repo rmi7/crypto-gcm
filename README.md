@@ -73,7 +73,7 @@ cg.destroy();
 
 - [ ] deal with large plaintext inputs, which will consist of chunks
 - [ ] add Base64 as a valid plaintext encoding
-- [ ] make sure decrypted payload is correct type (= plainext encoding)
+- [ ] ~~make sure decrypted payload is correct type (= plainext encoding)~~
 
 ## Compatibility
 
