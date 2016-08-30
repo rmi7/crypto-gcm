@@ -91,7 +91,7 @@ describe('crypto-gcm', () => {
 
         describe(`plaintext: ${plaintext}\tpayload: ${payload}`, () => {
 
-          let cg, _plaintext, _encrypted, _decrypted;
+          let cg;
 
           before(() => {
             cg = new CryptoGcm({
@@ -208,6 +208,9 @@ describe('crypto-gcm', () => {
           });
 
           describe('encryption/decryption should work and correct encoding', () => {
+
+            let _plaintext, _encrypted, _decrypted;;
+
             before(() => {
               _plaintext = (plaintext === 'buffer') ? Bytes :
                            (plaintext === 'utf8')   ? Utf8 :
