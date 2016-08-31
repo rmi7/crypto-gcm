@@ -15,7 +15,7 @@
   ],
   "main": "index.js",
   "scripts": {
-    "test": "mocha test.js",
+    "test": "mocha test.js"
   },
   "homepage": "https://github.com/rmi7/crypto-gcm",
   "repository": {
