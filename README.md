@@ -8,6 +8,10 @@ No dependencies! Just a *shell* around `crypto` to make it easier to use.
 
 Everything happens synchronously, so no callbacks/promises/async.
 
+## Install
+
+`npm install crypto-gcm`
+
 ## WeakMap
 
 To store the encryption key, a `WeakMap` is used.
@@ -67,7 +71,7 @@ cg.destroy();
 
 ## Tests
 
-`npm test`
+`npm install && npm test`
 
 ## Todo
 

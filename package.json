@@ -1,6 +1,6 @@
 {
   "name": "crypto-gcm",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "encrypt and decrypt with AES GCM 256, different plaintext/payload encodings supported",
   "keywords": [
     "aes",
