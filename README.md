@@ -1,5 +1,9 @@
 # crypto-gcm
 
+![License](https://img.shields.io/github/license/rmi7/crypto-gcm.svg?style=flat-square)
+[![Version](https://img.shields.io/npm/v/crypto-gcm.svg?style=flat-square&label=version)](https://www.npmjs.com/package/crypto-gcm)
+![Download](https://img.shields.io/npm/dt/crypto-gcm.svg)
+
 Encrypt / Decrypt data with `AES-256-GCM`.
 
 Different encodings for plaintext and payload are supported.
